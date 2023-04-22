@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Task1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +21,9 @@ public class Main {
         for (int i = 0; i < productList.size(); i++) {
             if (productList.get(i).name.equals(searchNameProduct)) {
                 searchVolumeProduct += productList.get(i).volume;
-                countryList.add(productList.get(i).country);
+                if(!countryList.contains(productList.get(i).country)) {
+                    countryList.add(productList.get(i).country);
+                }
             }
         }
         System.out.println("countryList = " + countryList);
