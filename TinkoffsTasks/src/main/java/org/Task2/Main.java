@@ -1,4 +1,4 @@
-package Task1;
+package org.Task2;
 
 import  java.util.Scanner;
 public class Main {
